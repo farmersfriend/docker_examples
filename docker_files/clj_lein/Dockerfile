@@ -6,5 +6,5 @@ WORKDIR /app
 # Generate the uberjar
 RUN ["lein", "uberjar"]
 
-# Run the uberjar
+# Run the uberjar when the image is started
 CMD ["java", "-jar", "target/uberjar/clj_lein-0.1.0-SNAPSHOT-standalone.jar"]
